@@ -1,3 +1,3 @@
-from main import generate
-def test_generate():
+from main import horoscope
+def test_horoscope():
   assert True
