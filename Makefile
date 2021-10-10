@@ -1,9 +1,9 @@
 install:
 	pip install --upgrade pip &&\
-		pip install -r requirements.txt
+		python3 -m pip install -r requirements.txt
 
 test:
-	python -m pytest -vv main.py
+	python -m pytest -vv test_main.py
 
 format:
 	black *.py
@@ -20,4 +20,4 @@ killweb:
 lint:
 	pylint --disable=R,C main.py
 
-all: install lint
+all: install lint test
