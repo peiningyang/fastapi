@@ -8,7 +8,7 @@ async def root():
     return {"message": "What is your horoscope?"}
 
 @app.get("/generate/{month}/{day}")
-async def horoscope(month: int, day: int):
+async def generate(month: int, day: int):
     """Takes in user's birthday and generates their horoscope"""
     
     if month == 12:
